@@ -16,7 +16,6 @@ int BinToDec(const char *bin) {
     for (int i = 0; i < size; i++) {
         int dec = BinToDec(bins[i]);
 
-        printf("Binario: %s\n", bins[i]);
         printf("Decimal: %d\n", dec);
         printf("Hexadecimal: %X\n\n", dec);
     } return 0;
