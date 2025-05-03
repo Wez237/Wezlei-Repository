@@ -24,7 +24,6 @@ void DecToBin(int dec, char *bin) {
 
     for (int i = 0; i < 3; i++) {
         DecToBin(decs[i], bin);
-        printf("Decimal: %d\n", decs[i]);
         printf("Binário: %s\n", bin);
         printf("Hexadecimal: %X\n\n", decs[i]);
     } return 0;
