@@ -9,21 +9,15 @@ void DecToBin(int dec, char *bin) {
     if (dec == 0) {
         strcpy(bin, "0");
         return;
-    }
-
-    while (dec > 0) {
+    } while (dec > 0) {
         temp[i++] = (dec % 2) + '0';
         dec /= 2;
-    }
-    temp[i] = '\0';
+    } temp[i] = '\0';
 
     for (int j = 0; j < i; j++) {
         bin[j] = temp[i - j - 1];
-    }
-    bin[i] = '\0';
-}
-
-int main() {
+    } bin[i] = '\0';
+} int main() {
     const char *hexdecs[] = {"7CD", "9873", "2F5AB"};
     int size = sizeof(hexdecs) / sizeof(hexdecs[0]);
     char bin[65];
@@ -37,7 +31,5 @@ int main() {
 
         printf("Decimal: %d\n", dec);
         printf("Binário: %s\n\n", bin);
-    }
-
-    return 0;
+    } return 0;
 }
